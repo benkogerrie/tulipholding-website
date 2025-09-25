@@ -1,48 +1,231 @@
----
-layout: home
-title: "Tulip Holding"
-description: "Professional investment and development company"
----
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tulip Holding - Specialists in Light Industrial Real Estate</title>
+    <meta name="description" content="Tulip Holding specializes in light industrial real estate development and investment.">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Header */
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 1rem 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+        
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+        
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        
+        .nav-links a:hover {
+            color: #3498db;
+        }
+        
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #2c3e50 0%, #3498db 100%);
+            color: white;
+            padding: 120px 0 80px;
+            text-align: center;
+        }
+        
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            font-weight: 300;
+        }
+        
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background-color: #e74c3c;
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: 600;
+            transition: background-color 0.3s ease;
+        }
+        
+        .cta-button:hover {
+            background-color: #c0392b;
+        }
+        
+        /* Features Section */
+        .features {
+            padding: 80px 0;
+            background-color: #f8f9fa;
+        }
+        
+        .features h2 {
+            text-align: center;
+            margin-bottom: 3rem;
+            color: #2c3e50;
+            font-size: 2.5rem;
+        }
+        
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+        
+        .feature-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .feature-card h3 {
+            color: #2c3e50;
+            margin-bottom: 1rem;
+        }
+        
+        /* Footer */
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+            
+            .nav-links {
+                flex-direction: column;
+                gap: 1rem;
+            }
+            
+            .features-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <div class="logo">Tulip Holding</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<div class="hero-section">
-  <div class="hero-content">
-    <h1>Welcome to Tulip Holding</h1>
-    <p class="hero-subtitle">Specialists in Light Industrial Real Estate. We provide expert solutions for industrial property development and investment.</p>
-    <a href="/about" class="cta-button">Learn More</a>
-  </div>
-</div>
+    <main>
+        <section id="home" class="hero">
+            <div class="container">
+                <h1>Welcome to Tulip Holding</h1>
+                <p>Specialists in Light Industrial Real Estate. We provide expert solutions for industrial property development and investment.</p>
+                <a href="#about" class="cta-button">Learn More</a>
+            </div>
+        </section>
 
-<div class="features-section">
-  <div class="container">
-    <h2>Our Services</h2>
-    <div class="features-grid">
-      <div class="feature-card">
-        <h3>Industrial Real Estate</h3>
-        <p>Specialized expertise in light industrial property development and management.</p>
-      </div>
-      <div class="feature-card">
-        <h3>Property Investment</h3>
-        <p>Strategic investment opportunities in industrial real estate markets.</p>
-      </div>
-      <div class="feature-card">
-        <h3>Development Services</h3>
-        <p>Complete development solutions from planning to construction and management.</p>
-      </div>
-    </div>
-  </div>
-</div>
+        <section id="services" class="features">
+            <div class="container">
+                <h2>Our Services</h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <h3>Industrial Real Estate</h3>
+                        <p>Specialized expertise in light industrial property development and management.</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3>Property Investment</h3>
+                        <p>Strategic investment opportunities in industrial real estate markets.</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3>Development Services</h3>
+                        <p>Complete development solutions from planning to construction and management.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-<div class="projects-section">
-  <div class="container">
-    <h2>Featured Projects</h2>
-    <div class="projects-grid">
-      {%- for project in site.projects limit: 3 -%}
-        <div class="project-card">
-          <h3>{{ project.title }}</h3>
-          <p>{{ project.description }}</p>
-          <a href="{{ project.url }}" class="project-link">View Project</a>
+        <section id="about" style="padding: 80px 0;">
+            <div class="container">
+                <h2 style="text-align: center; margin-bottom: 2rem; color: #2c3e50;">About Tulip Holding</h2>
+                <p style="text-align: center; font-size: 1.1rem; max-width: 800px; margin: 0 auto;">
+                    Tulip Holding is a specialized company focused on light industrial real estate development and investment. 
+                    With extensive experience in the industrial property sector, we have established ourselves as trusted specialists in this niche market.
+                </p>
+            </div>
+        </section>
+
+        <section id="contact" style="padding: 80px 0; background-color: #f8f9fa;">
+            <div class="container">
+                <h2 style="text-align: center; margin-bottom: 2rem; color: #2c3e50;">Contact Us</h2>
+                <div style="text-align: center;">
+                    <p style="font-size: 1.1rem; margin-bottom: 1rem;"><strong>Email:</strong> holl@tulipholding.cz</p>
+                    <p style="font-size: 1.1rem; margin-bottom: 1rem;"><strong>Location:</strong> Prague, Czech Republic</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Tulip Holding. All rights reserved.</p>
         </div>
-      {%- endfor -%}
-    </div>
-  </div>
-</div>
+    </footer>
+</body>
+</html>
