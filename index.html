@@ -1,0 +1,48 @@
+---
+layout: home
+title: "Tulip Holding"
+description: "Professional investment and development company"
+---
+
+<div class="hero-section">
+  <div class="hero-content">
+    <h1>Welcome to Tulip Holding</h1>
+    <p class="hero-subtitle">Specialists in Light Industrial Real Estate. We provide expert solutions for industrial property development and investment.</p>
+    <a href="/about" class="cta-button">Learn More</a>
+  </div>
+</div>
+
+<div class="features-section">
+  <div class="container">
+    <h2>Our Services</h2>
+    <div class="features-grid">
+      <div class="feature-card">
+        <h3>Industrial Real Estate</h3>
+        <p>Specialized expertise in light industrial property development and management.</p>
+      </div>
+      <div class="feature-card">
+        <h3>Property Investment</h3>
+        <p>Strategic investment opportunities in industrial real estate markets.</p>
+      </div>
+      <div class="feature-card">
+        <h3>Development Services</h3>
+        <p>Complete development solutions from planning to construction and management.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="projects-section">
+  <div class="container">
+    <h2>Featured Projects</h2>
+    <div class="projects-grid">
+      {%- for project in site.projects limit: 3 -%}
+        <div class="project-card">
+          <h3>{{ project.title }}</h3>
+          <p>{{ project.description }}</p>
+          <a href="{{ project.url }}" class="project-link">View Project</a>
+        </div>
+      {%- endfor -%}
+    </div>
+  </div>
+</div>
